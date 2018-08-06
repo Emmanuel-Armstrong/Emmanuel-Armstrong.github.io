@@ -9,15 +9,14 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Print For Less Ordering Center</title>
+    <title>pfl - Furniture Ecommerce Template | Shop</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="scss/style.scss">
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -67,25 +66,110 @@
             <div class="logo">
                 <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
             </div>
-            <!-- PFL  Nav -->
+            <!-- pfl Nav -->
             <nav class="pfl-nav">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="shop.html">Shop</a></li>
                     <li><a href="product-details.html">Product</a></li>
                     <li><a href="cart.html">Cart</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
                 </ul>
             </nav>
-
+            <!-- Button Group -->
+            <div class="pfl-btn-group mt-30 mb-100">
+                <a href="#" class="btn pfl-btn mb-15">%Discount%</a>
+                <a href="#" class="btn pfl-btn active">New this week</a>
+            </div>
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
+                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
+            </div>
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
         </header>
         <!-- Header Area End -->
 
         <div class="shop_sidebar_area">
+
+            <!-- ##### Single Widget ##### -->
+            <div class="widget catagory mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Catagories</h6>
+
+                <!--  Catagories  -->
+                <div class="catagories-menu">
+                    <ul>
+                        <li class="active"><a href="#">Chairs</a></li>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Home Deco</a></li>
+                        <li><a href="#">Dressings</a></li>
+                        <li><a href="#">Tables</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ##### Single Widget ##### -->
+            <div class="widget brands mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Brands</h6>
+
+                <div class="widget-desc">
+                    <!-- Single Form Check -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pfl">
+                        <label class="form-check-label" for="pfl">pfl</label>
+                    </div>
+                    <!-- Single Form Check -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ikea">
+                        <label class="form-check-label" for="ikea">Ikea</label>
+                    </div>
+                    <!-- Single Form Check -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="furniture">
+                        <label class="form-check-label" for="furniture">Furniture Inc</label>
+                    </div>
+                    <!-- Single Form Check -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="factory">
+                        <label class="form-check-label" for="factory">The factory</label>
+                    </div>
+                    <!-- Single Form Check -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="artdeco">
+                        <label class="form-check-label" for="artdeco">Artdeco</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ##### Single Widget ##### -->
+            <div class="widget color mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Color</h6>
+
+                <div class="widget-desc">
+                    <ul class="d-flex">
+                        <li><a href="#" class="color1"></a></li>
+                        <li><a href="#" class="color2"></a></li>
+                        <li><a href="#" class="color3"></a></li>
+                        <li><a href="#" class="color4"></a></li>
+                        <li><a href="#" class="color5"></a></li>
+                        <li><a href="#" class="color6"></a></li>
+                        <li><a href="#" class="color7"></a></li>
+                        <li><a href="#" class="color8"></a></li>
+                    </ul>
+                </div>
+            </div>
 
             <!-- ##### Single Widget ##### -->
             <div class="widget price mb-50">
@@ -105,7 +189,7 @@
             </div>
         </div>
 
-        <div class="amado_product_area section-padding-100">
+        <div class="pfl_product_area section-padding-100">
             <div class="container-fluid">
 
                 <div class="row">
@@ -121,12 +205,13 @@
                             </div>
                             <!-- Sorting -->
                             <div class="product-sorting d-flex">
-                                <div class="sort-by-name d-flex align-items-center mr-15">
+                                <div class="sort-by-date d-flex align-items-center mr-15">
                                     <p>Sort by</p>
                                     <form action="#" method="get">
-                                        <select name="select" id="sortByname">
-                                            <option value="value">Name</option>
-                                            <option value="value">Price</option>
+                                        <select name="select" id="sortBydate">
+                                            <option value="value">Date</option>
+                                            <option value="value">Newest</option>
+                                            <option value="value">Popular</option>
                                         </select>
                                     </form>
                                 </div>
@@ -389,6 +474,31 @@
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
 
+    <!-- ##### Newsletter Area Start ##### -->
+    <section class="newsletter-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Newsletter Text -->
+                <div class="col-12 col-lg-6 col-xl-7">
+                    <div class="newsletter-text mb-100">
+                        <h2>Subscribe for a <span>25% Discount</span></h2>
+                        <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+                    </div>
+                </div>
+                <!-- Newsletter Form -->
+                <div class="col-12 col-lg-6 col-xl-5">
+                    <div class="newsletter-form mb-100">
+                        <form action="#" method="post">
+                            <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ##### -->
+
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer_area clearfix">
         <div class="container">
@@ -415,6 +525,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                                 <div class="collapse navbar-collapse" id="footerNavContent">
                                     <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="shop.html">Shop</a>
                                         </li>
