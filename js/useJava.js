@@ -21,7 +21,7 @@ function getProducts(){
   }
 }
 
-function setCustomer(){    
+function setCustomer(){  
     firstName = document.getElementById("first_name").innerHTML;
     lastName = document.getElementById("last_name").innerHTML;
     companyName = document.getElementById("company").innerHTML;
